@@ -112,3 +112,130 @@ body{
     margin-top: 20px;
     cursor: pointer;
 }
+
+.social-panel-container{
+    position: fixed;
+    right: 0;
+    bottom: 80px;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.social-panel-container.visible {
+    transform: translateX(-10px);
+}
+
+.social-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 169px;
+    background-color: #fff;
+    border: 5px solid #001f61;
+    border-radius: 16px;
+    box-shadow: 0 16px 31px -17px rgba(0, 31, 97, 0.6);
+    max-width: calc(100% - 10px);
+    position: relative;
+}
+
+.social-panel button.close-btn {
+    border: none;
+    color: #97a5ce;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.social-panel button.close-btn:focus{
+    outline: none;
+}
+
+.social-panel p {
+    width: 235px;
+    background-color: #001f61;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 0 0 10px 10px;
+    padding: 2px 17px 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.social-panel p i {
+    margin: 0 5px;
+}
+
+.social-panel a {
+    color: #ff7500;
+    text-decoration: none;
+}
+
+.social-panel h4 {
+    margin: 20px 0;
+    color: #97a5ce;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    
+}
+
+.social-panel ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-panel ul li {
+    margin: 0 10px;
+}
+
+.social-panel ul li a {
+    border: 1px solid #f7f7f7;
+    border-radius: 50%;
+    color: #001f61;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+}
+ 
+.social-panel ul li a:hover {
+    border-color: coral;
+    box-shadow: 0 9px 12px -9px coral;
+}
+
+.floating-btn {
+    border-radius: 26.5px;
+    background-color: darkblue;
+    border-color: darkblue;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.floating-btn:hover {
+    background-color: #fff;
+    color: darkblue;
+}
+
+.floating-btn:focus{
+    outline: none;
+}

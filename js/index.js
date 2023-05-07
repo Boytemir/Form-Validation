@@ -61,3 +61,17 @@ function setSuccessMessage(input) {
     formControl.className = "form-control success"
 }
 
+
+
+const floating__btn = document.querySelector(".floating-btn");
+const close__btn = document.querySelector(".close-btn");
+const social__panel__container = document.querySelector(".social-panel-container");
+
+
+floating__btn.addEventListener("click", () => {
+    social__panel__container.classList.toggle("visible");
+});
+
+close__btn.addEventListener("click", () => {
+    social__panel__container.classList.toggle("visible");
+})
